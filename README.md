@@ -1,1 +1,1 @@
-# gallery-app
+# photo-gallery-app
