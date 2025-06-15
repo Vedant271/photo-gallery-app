@@ -14,7 +14,7 @@ const ImageModal: React.FC<Props> = ({ photo, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="bg-white p-4 rounded-lg max-w-3xl w-full relative"
+        className="bg-white p-4 rounded-[25px] max-w-3xl w-full relative"
         onClick={(e) => e.stopPropagation()} // prevent outside click from closing immediately
       >
         <button

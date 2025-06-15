@@ -7,7 +7,7 @@ import ImageModal from "./components/ImageModal";
 const PHOTOS_URL = "https://jsonplaceholder.typicode.com/photos";
 
 function App() {
-  const [photos, setPhotos] = useState<Photo[]>([]);
+  const [photos, setPhotos] = useState<Photo[]>([]); // photos list
   const [start, setStart] = useState(0);
   const limit = 20;
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
@@ -59,11 +59,14 @@ function App() {
       }}
     >
     <div className="p-4 relative">
-      <h1 className="text-5xl font-bold text-center mt-8 mb-10 drop-shadow-md">
+      {/* <h1 className="text-5xl font-bold text-center mt-8 mb-10 drop-shadow-md">
+        Photo Gallery
+      </h1> */}
+
+      <h1 className="text-5xl font-bold text-center mt-8 mb-10 text-white drop-shadow-[0_2px_4px_rgba(255,255,255,0.4)]">
         Photo Gallery
       </h1>
       
-
       <GalleryGrid photos={photos} onPhotoClick={openModal} />
 
       {error && (
