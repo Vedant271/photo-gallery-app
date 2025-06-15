@@ -80,7 +80,7 @@ function App() {
       </div>
 
       {selectedPhoto && (
-        <ImageModal photo={selectedPhoto} onClose={closeModal} />
+        <ImageModal photo={{...selectedPhoto, url: "https://placehold.co/600"}} onClose={closeModal} />
       )}
     </div>
     </div>

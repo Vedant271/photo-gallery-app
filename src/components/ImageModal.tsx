@@ -24,8 +24,7 @@ const ImageModal: React.FC<Props> = ({ photo, onClose }) => {
           ✕
         </button>
         <img
-        //   src={photo.url}
-          src={"https://placehold.co/600"}
+          src={photo.url}
           alt={photo.title}
           onError={(e) => {
             e.currentTarget.onerror = null;

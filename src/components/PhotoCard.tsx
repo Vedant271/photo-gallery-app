@@ -12,8 +12,7 @@ const PhotoCard: React.FC<Props> = ({ photo, onClick }) => {
     <div className="bg-white p-2 rounded-[20px] drop-shadow-[0_4px_8px_rgba(255,255,255,0.5)] transition cursor-pointer" onClick={() => onClick(photo)}>
       <div className="aspect-square overflow-hidden">
         <img
-            // src={photo.thumbnailUrl}
-            src={"https://placehold.co/150"}
+            src={photo.thumbnailUrl}
             alt={photo.title}
             onError={(e) => {
                 e.currentTarget.onerror = null; // prevent infinite loop
