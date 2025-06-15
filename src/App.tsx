@@ -59,10 +59,6 @@ function App() {
       }}
     >
     <div className="p-4 relative">
-      {/* <h1 className="text-5xl font-bold text-center mt-8 mb-10 drop-shadow-md">
-        Photo Gallery
-      </h1> */}
-
       <h1 className="text-5xl font-bold text-center mt-8 mb-10 text-white drop-shadow-[0_2px_4px_rgba(255,255,255,0.4)]">
         Photo Gallery
       </h1>
